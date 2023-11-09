@@ -32,7 +32,7 @@ double integral(double x_start, double x_end)
         s_current = 0.0;
         intervals *= 2;
         delta = (x_end - x_start) / intervals;
-        for (i = 1, x = x_start; i < intervals; i++, x += delta)
+        for (i = 1, x = x_start; i <= intervals; i++, x += delta)
         {
             s_current += function(x);
         }
